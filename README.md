@@ -8,3 +8,4 @@
 ![image](https://user-images.githubusercontent.com/60374155/220974031-55bb1422-653a-4f49-82cd-4f761acc68e6.png)
 3. Recipe Table 스키마: playersandwich
 ![image](https://user-images.githubusercontent.com/60374155/220974279-e346d050-dd68-4952-92fe-601fd4cb0655.png)
+.
