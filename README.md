@@ -5,7 +5,7 @@
 <br>
 설치 버전 : Apache2.4.53, PHP8, MySQL8.0
 <br>
-UE4와 Apache 서버를 Rest기반 설계
+UE4와 Apache서버 통신을 Rest기반 설계
 ## MySQL DB 테이블 설계 구조
 1. DB 스키마 <br>
 ![image](https://user-images.githubusercontent.com/60374155/220973950-8c136f40-c037-4d47-acb3-c9e6b3d6e947.png)
