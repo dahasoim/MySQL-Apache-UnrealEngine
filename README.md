@@ -35,7 +35,7 @@ AddPlayer Event: 위의 사용자 정보 조회한 후, DB에 사용자 등록(�
 ![image](https://user-images.githubusercontent.com/60374155/221091762-28da751d-db4a-4737-978f-ba2fd18d8198.png)
 
 ### 주문한 레시피 저장(또는 수정) ###
-post방식으로 json형식 데이터 요청 설정 <br>
+post방식을 사용하고, 데이터를 json타입으로 설정 <br>
 ![image](https://user-images.githubusercontent.com/60374155/221343268-95bdf9d4-30cc-43c7-a59b-d6dea98f9525.png)
 
 AddPlayerMenu Event: 사용자 이름과 사용자가 주문한 레시피(Recipe obj)를 Request 변수에 설정 후, Process URL 실행하여 레시피 저장 요청<br>
