@@ -14,17 +14,17 @@
 - playersandwich : 사용자 레시피 정보 <br>
 ![image](https://user-images.githubusercontent.com/60374155/220974279-e346d050-dd68-4952-92fe-601fd4cb0655.png)
 
-## UE4 - Apache 웹서버 -MySQL DB 통신방법
-1. http method 사용하여 웹서버와 통신 가능하게 하는 VaRest Plugin 설치한다.(UE 마켓플레이스) <br>
-2. Rest Server통신 지원하는 Va Rest Subsystem을 사용하여 서버에 get/post 방식으로 http request한다. <br>
-3. 요청한 기능을 처리하는 php 파일 실행하여 DB접속하고 데이터를 가져온다.
-4. Json 데이터 결과를 받는다 <br>
+## UE4 - Apache 웹서버 -MySQL DB 통신
+1. http method 사용하여 웹서버와 통신 가능하게 하는 <strong>VaRest Plugin</strong>을 설치한다.(UE 마켓플레이스) <br>
+2. Rest Server통신을 지원하는 Va Rest Subsystem을 사용하여 서버에 get/post 방식으로 http request한다. <br>
+3. 요청한 기능을 처리하는 php 파일 실행한다.
+4. mysqli 쿼리로 DB에 연결하여 데이터를 가져오고 Json타입으로 처리하여 UE에 데이터를 반환한다. <br>
 
 ## PHP로 구현한 기능
 1. 사용자 가입기능, 로그인 기능 <br> - 사용자 정보(데이터) 저장 : insertPlayerInfo.php <br> - 사용자 정보 조회 : selectPlayerInfo.php
-2. 관심메뉴 기능 <br> - 주문한 레시피 저장: insertPlayerMenu.php <br> - 등록한 레시피 조회 : selectPlayerMenu.php
+2. 관심메뉴 기능 <br> - 주문한 레시피 저장(수정): insertPlayerMenu.php <br> - 등록한 레시피 조회 : selectPlayerMenu.php
 
-## 웹서버 요청 과정 블루프린트
+## UE4 - 웹서버 요청 과정 블루프린트
 ### 사용자 정보 조회 ###
 Call URL 함수를 사용해 get방식으로 사용자 정보 전달
 FindPlayer Event: 사용자 닉네임으로 DB에 정보가 있는지 조회 <br>
@@ -34,7 +34,7 @@ FindPlayer Event: 사용자 닉네임으로 DB에 정보가 있는지 조회 <br
 AddPlayer Event: 사용자 정보 조회 요청, DB에 사용자 등록 <br>
 ![image](https://user-images.githubusercontent.com/60374155/221091762-28da751d-db4a-4737-978f-ba2fd18d8198.png)
 
-### 주문한 레시피 저장 ###
+### 주문한 레시피 저장(수정) ###
 post방식으로 json형식 데이터 요청 설정 <br>
 ![image](https://user-images.githubusercontent.com/60374155/221343268-95bdf9d4-30cc-43c7-a59b-d6dea98f9525.png)
 
