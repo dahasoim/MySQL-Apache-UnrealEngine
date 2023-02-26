@@ -21,7 +21,7 @@
 3. 웹서버가 요청한 기능을 처리하는 php 파일 실행한다.
 4. mysqli 쿼리로 DB에 연결하여 데이터를 가져오고 Json타입으로 처리하여 UE에 데이터를 반환한다. <br>
 
-## PHP로 구현한 기능
+## PHP 구현 기능
 1. 사용자 가입기능, 로그인 기능 <br> - 사용자 정보(데이터) 저장 : insertPlayerInfo.php <br> - 사용자 정보 조회 : selectPlayerInfo.php
 2. 관심메뉴 기능 <br> - 주문한 레시피 저장(수정): insertPlayerMenu.php <br> - 등록한 레시피 조회 : selectPlayerMenu.php
 
