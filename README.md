@@ -4,9 +4,16 @@
 ![image](https://user-images.githubusercontent.com/60374155/220970378-30bf1878-fa81-4b49-be1d-55162a6464dc.png) <br>
 ### 설치 버전 ###
 Apache2.4.53, PHP8, MySQL8.0
-### 연동 과정 ###
+
+### UE-Apache-DB 연동 과정 ###
 Rest Server통신을 지원하는 <strong>Va Rest Subsystem</strong>을 사용하여 UE4에서 서버로 get/post 방식의 http request를 한다. <br>
 php파일에서 mysqli 쿼리로 DB 연결 및 데이터를 가져오고, Json타입으로 처리하여 UE에 데이터를 반환한다. <br>
+
+## 코드 실행방법 
+1. 웹서버와 통신 가능하게 하는 <strong>VaRest Plugin</strong>을 설치한다.(UE 마켓플레이스) <br>
+2. Apache의 htdocs파일에 php파일을 저장후, php파일의 데이터베이스 연결 정보를 변경한다.(개인의 user,password,db)
+3. UE4 이벤트 그래프에 Blueprints 코드 복사한다.
+
 ## MySQL DB
 1. DB Tables <br>
 ![image](https://user-images.githubusercontent.com/60374155/221397737-42b691b4-c283-4349-ab83-c9588e2c7de0.png) <br>
@@ -17,11 +24,6 @@ php파일에서 mysqli 쿼리로 DB 연결 및 데이터를 가져오고, Json�
 ![image](https://user-images.githubusercontent.com/60374155/221397876-50a67de7-fab9-4230-9f9d-c8a93b340373.png)
 - playersandwich : 사용자 레시피 정보 <br>
 ![image](https://user-images.githubusercontent.com/60374155/221397914-20364e9b-4e04-4f93-857a-f809bfd970b1.png)
-
-## 코드 실행방법 
-1. 웹서버와 통신 가능하게 하는 <strong>VaRest Plugin</strong>을 설치한다.(UE 마켓플레이스) <br>
-2. Apache의 htdocs파일에 php파일을 저장한다.
-3. UE4 이벤트 그래프에 Blueprints 코드를 복사한다.
 
 ## PHP 구현 기능
 1. 사용자 가입기능, 로그인 기능 <br> - 사용자 정보(데이터) 저장 : insertPlayerInfo.php <br> - 사용자 정보 조회 : selectPlayerInfo.php
