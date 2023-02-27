@@ -12,7 +12,7 @@ php파일에서 mysqli 쿼리로 DB 연결 및 데이터를 가져오고, Json�
 ## 코드 실행방법 
 1. 웹서버와 통신 가능하게 하는 <strong>VaRest Plugin</strong>을 설치한다.(UE 마켓플레이스) <br>
 2. Apache의 htdocs파일에 php파일을 저장후, php파일의 데이터베이스 연결 정보를 변경한다.(개인의 user,password,db)
-3. UE4 이벤트 그래프에 Blueprints 코드 복사한다.
+3. UE4 이벤트 그래프에 Blueprints 코드를 복사하고 필요한 변수와 이벤트를 생성한다. 
 
 ## MySQL DB
 1. DB Tables <br>
