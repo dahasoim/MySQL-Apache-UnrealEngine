@@ -19,7 +19,7 @@ php파일에서 mysqli 쿼리로 DB 연결 및 데이터를 가져오고, Json�
 ![image](https://user-images.githubusercontent.com/60374155/221397737-42b691b4-c283-4349-ab83-c9588e2c7de0.png) <br>
 ![image](https://user-images.githubusercontent.com/60374155/220973950-8c136f40-c037-4d47-acb3-c9e6b3d6e947.png) 
 
-.2 Table 스키마 <br>
+2. Table 스키마 <br>
 - playerdb: 사용자 정보 <br>
 ![image](https://user-images.githubusercontent.com/60374155/221397876-50a67de7-fab9-4230-9f9d-c8a93b340373.png)
 - playersandwich : 사용자 레시피 정보 <br>
