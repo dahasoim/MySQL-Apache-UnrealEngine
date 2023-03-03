@@ -11,8 +11,8 @@ php파일에서 mysqli 쿼리로 DB 연결 및 데이터를 가져오고, Json�
 
 ## 코드 실행방법 
 1. 웹서버와 통신 가능하게 하는 <strong>VaRest Plugin</strong>을 설치한다.(UE 마켓플레이스) <br>
-2. Apache의 htdocs파일에 php파일을 저장후, php파일의 데이터베이스 연결 정보를 변경한다.(개인의 user,password,db)
-3. UE4 이벤트 그래프에 Blueprints 코드를 복사하고 필요한 변수와 이벤트를 생성한다. 
+2. Apache설치 파일의 htdocs 파일에 php파일을 저장후, php파일의 데이터베이스 연결 정보를 변경한다.(개인의 user,password,db)
+3. UE4 이벤트 그래프에 Blueprint 코드를 복사하고 필요한 변수,이벤트를 생성한다.
 
 ## MySQL DB
 1. DB Tables <br>
@@ -30,6 +30,10 @@ php파일에서 mysqli 쿼리로 DB 연결 및 데이터를 가져오고, Json�
 2. 관심메뉴 기능 <br> - 주문한 레시피 저장(수정): insertPlayerMenu.php <br> - 등록한 레시피 조회 : selectPlayerMenu.php
 
 ## UE4 - 웹서버 요청 과정 블루프린트
+### 블루프린트 링크 ###
+[PHP 구현기능 1](https://blueprintue.com/blueprint/lj4idt4o/)
+[PHP 구현기능 2](https://blueprintue.com/blueprint/lj4idt4o/)
+
 ### 사용자 정보 조회 ###
 Call URL 함수를 사용해 get방식으로 request <br>
 FindPlayer Event: 사용자 닉네임으로 DB에 정보가 있는지 조회 <br>
