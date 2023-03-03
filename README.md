@@ -30,20 +30,19 @@ php파일에서 mysqli 쿼리로 DB 연결 및 데이터를 가져오고, Json�
 2. 관심메뉴 기능 <br> - 주문한 레시피 저장(수정): insertPlayerMenu.php <br> - 등록한 레시피 조회 : selectPlayerMenu.php
 
 ## 웹서버 요청 블루프린트
-### 블루프린트 링크 ###
-[PHP 구현기능 1 사용](https://blueprintue.com/blueprint/jk8xd_yu/) <br>
-[PHP 구현기능 2 사용](https://blueprintue.com/blueprint/lj4idt4o/)
-
-### 사용자 정보 조회 ###
+### Blueprint code
+[블루프린트 링크 1](https://blueprintue.com/blueprint/jk8xd_yu/) <br>
+[블루프린트 링크 2](https://blueprintue.com/blueprint/lj4idt4o/)
+### 사용자 정보 조회 
 Call URL 함수를 사용해 get방식으로 request <br>
 FindPlayer Event: 사용자 닉네임으로 DB에 정보가 있는지 조회 <br>
 ![image](https://user-images.githubusercontent.com/60374155/221089404-4b1e6d9f-83a7-4900-80b2-42d2feec3be2.png)
 
-### 사용자 데이터 저장 ###
+### 사용자 데이터 저장
 AddPlayer Event: 위의 사용자 정보 조회한 후, DB에 사용자 등록(저장) 요청<br>
 ![image](https://user-images.githubusercontent.com/60374155/221091762-28da751d-db4a-4737-978f-ba2fd18d8198.png)
 
-### 주문한 레시피 저장(또는 수정) ###
+### 주문한 레시피 저장(또는 수정)
 post방식을 사용하고, 데이터를 json타입으로 설정 <br>
 ![image](https://user-images.githubusercontent.com/60374155/221343268-95bdf9d4-30cc-43c7-a59b-d6dea98f9525.png)
 
